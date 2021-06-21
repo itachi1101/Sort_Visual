@@ -12,10 +12,12 @@
     <header>
         <nav>
             <div class="logo">
-                <h4>Sorting Visualizer</h4>
+                <div class="hero">
+                    <h4>Sorting Visualizer</h4>
+                </div>
             </div>
             <ul class="nav-links">
-                <li> <a href="#">BUBBLE</a>
+                <li> <a href="#">SELECTION</a>
                 </li>
                 <li>
                     <a href="#">MERGE</a>
@@ -31,6 +33,16 @@
             </div>
         </nav>
     </header>
+<section class="data-container"></section>
+
+<!-- "Generate New Array" button -->
+<button class="btn1" onclick="generate()" id="Button1">
+    Generate New Array</button>
+
+<!-- "Selection Sort" button -->
+<button class="btn2" onclick="SelectionSort(),disable()" id="Button2">
+    Selection Sort</button>
+
 </body>
 <script src="app.js"></script>
 </html>
