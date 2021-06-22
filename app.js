@@ -1,23 +1,28 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-        // animating links
-        navLinks.forEach((link,index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            }
-            else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
-        })
+const arraySpace = document.querySelector(".array_space");
+
+function arrayGenerator() {
+    const number = 20;
+
+    for (let i = 0; i < number; i+=1){
+        const height = Math.floor(Math.random() * 100) + 4;
+
+        const verticalBar = document.createElement("div");
+        verticalBar.classList.add("bar");
+
+        verticalBar.style.height = `${height * 3.5}px`;
+
+        verticalBar.style.transform = `translateX(${i * 31}px)`;
+
+        const BarMarkings = document.createElement("label");
+        BarMarkings.classList.add("markings");
+        BarMarkings.innerHTML = height;
 
 
-        //burger
-        burger.classList.toggle('toggle');
+        verticalBar.appendChild(BarMarkings);
+        arraySpace.appendChild(verticalBar);
 
-    })
+
+    }
+    
 }
-navSlide();
+arrayGenerator();
