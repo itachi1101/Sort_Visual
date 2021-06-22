@@ -1,6 +1,7 @@
 const element = document.getElementById("one");
 element.addEventListener("click", () => {
-  console.log("chick");
+  document.getElementById("one").style.pointerEvents = "none";
+  document.getElementById("generator").style.pointerEvents = "none";
   SelectionSort();
 });
 async function SelectionSort(delay = 300) {
@@ -66,11 +67,13 @@ async function SelectionSort(delay = 300) {
     // background-color: #85FFBD;
     // background-image: linear-gradient(45deg, #85FFBD 0%, #33f372 25%, #fbf4f4 100%);
   }
+
   await new Promise((resolve) =>
     setTimeout(() => {
       resolve();
     }, 1000)
   );
+
   for (let i = 0; i < bars.length; i += 1) {
     await new Promise((resolve) =>
       setTimeout(() => {
@@ -91,4 +94,6 @@ async function SelectionSort(delay = 300) {
     bars[i].style.backgroundImage =
       "linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)";
   }
+  document.getElementById("one").style.pointerEvents = "auto";
+  document.getElementById("generator").style.pointerEvents = "auto";
 }
