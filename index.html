@@ -10,39 +10,15 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <div class="hero">
-                    <h4>Sorting Visualizer</h4>
-                </div>
-            </div>
-            <ul class="nav-links">
-                <li> <a href="#">SELECTION</a>
-                </li>
-                <li>
-                    <a href="#">MERGE</a>
-                </li>
-                <li>
-                    <a href="#">QUICK</a>
-                </li>
-            </ul>
-            <div class="burger">
-                <div class="line1"> </div>
-                <div class="line2"> </div>
-                <div class="line3"> </div>
-            </div>
-        </nav>
+        <div class="head">
+            <div class="btn" id="generator">Array Generator</div>
+            <div class="btn">Selection Sort</div>
+            <div class="btn">Merge Sort</div>
+            <div class="btn">Quick Sort</div>
+        </div>   
     </header>
-<section class="data-container"></section>
 
-<!-- "Generate New Array" button -->
-<button class="btn1" onclick="generate()" id="Button1">
-    Generate New Array</button>
-
-<!-- "Selection Sort" button -->
-<button class="btn2" onclick="SelectionSort(),disable()" id="Button2">
-    Selection Sort</button>
-
+  <section class="array_space"></section>
 </body>
 <script src="app.js"></script>
 </html>
