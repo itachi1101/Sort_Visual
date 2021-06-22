@@ -5,8 +5,7 @@
     font-family: 'Poppins';
 }
 .head{
-  background-color: #85FFBD;
-background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
 
 
     height:90px;
@@ -16,7 +15,7 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     flex-wrap: wrap;
 }
 .btn{
-    color:black;
+    color:white;
     cursor: pointer;
     margin:30px 30px 30px 30px;
     text-align: center;
@@ -28,7 +27,7 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     background-color: rgb(184, 179, 179); 
 }
 #generator:hover{
-    background-color: rgb(140, 140, 243);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 .array_space{
     width:700px;
