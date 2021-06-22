@@ -6,5 +6,5 @@ merge.addEventListener('click', () => {
 });
 
 function mergeSort() {
-    
+    const i = 0;
 }
