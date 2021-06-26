@@ -71,7 +71,7 @@ async function SelectionSort(delay = 300) {
   await new Promise((resolve) =>
     setTimeout(() => {
       resolve();
-    }, 1000)
+    }, 500)
   );
 
   for (let i = 0; i < bars.length; i += 1) {
